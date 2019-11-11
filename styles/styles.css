@@ -23,14 +23,28 @@ body {
 
 .calculator-grid button {
     cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid white;
+    font-size: 2.5rem;
+    border: 1px solid #757b81;
     outline: none;
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(12, 11, 11, 0.75);
+    color: white;
 }
 
 .calculator-grid button:hover {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(110, 107, 107, 0.9);
+}
+
+.calculator-grid .special {
+    background-color: rgba(51, 50, 50, 0.75);
+    font-size: 3rem;
+}
+
+.calculator-grid [data-delete] {
+    font-size: 2.5rem;
+}
+
+.calculator-grid [data-all-clear] {
+    font-size: 2.5rem;
 }
 
 .span-two {
@@ -55,6 +69,6 @@ body {
 }
 
 .output .current-operand {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     font-size: 2.5rem;
 }
