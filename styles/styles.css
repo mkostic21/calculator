@@ -39,9 +39,15 @@ body {
     font-size: 3rem;
 }
 
+
+/*single button*/
+
 .calculator-grid [data-delete] {
     font-size: 2.5rem;
 }
+
+
+/*single button*/
 
 .calculator-grid [data-all-clear] {
     font-size: 2.5rem;
