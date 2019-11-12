@@ -123,3 +123,14 @@ deleteButton.addEventListener('click', button => {
     calculator.delete();
     calculator.updateDisplay();
 })
+
+
+
+var slider = document.querySelector('input[type="checkbox"]');
+slider.addEventListener('change', function() {
+    if (slider.checked) {
+        document.querySelector('link[href="styles/light.css"]').href = "styles/dark.css";
+    } else {
+        document.querySelector('link[href="styles/dark.css"]').href = "styles/light.css";
+    }
+})
