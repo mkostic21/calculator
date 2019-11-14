@@ -99,30 +99,30 @@ numberButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.appendNumber(button.innerText);
         calculator.updateDisplay();
-    })
-})
+    });
+});
 
 operationButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.chooseOperation(button.innerText);
         calculator.updateDisplay();
-    })
-})
+    });
+});
 
 equalsButton.addEventListener('click', button => {
     calculator.compute();
     calculator.updateDisplay();
-})
+});
 
 allClearButton.addEventListener('click', button => {
     calculator.clear();
     calculator.updateDisplay();
-})
+});
 
 deleteButton.addEventListener('click', button => {
     calculator.delete();
     calculator.updateDisplay();
-})
+});
 
 
 
@@ -130,7 +130,22 @@ var slider = document.querySelector('input[type="checkbox"]');
 slider.addEventListener('change', function() {
     if (slider.checked) {
         document.querySelector('link[href="styles/light.css"]').href = "styles/dark.css";
+        toggleTextModeColor(true);
     } else {
         document.querySelector('link[href="styles/dark.css"]').href = "styles/light.css";
+        toggleTextModeColor(false);
     }
-})
+});
+
+function toggleTextModeColor(checked) {
+    var texts = document.getElementsByClassName('mode-text');
+    if (checked) {
+        for (i = 0; i < texts.length; i++) {
+            texts[i].style.color = "white";
+        }
+    } else {
+        for (i = 0; i < texts.length; i++) {
+            texts[i].style.color = "black";
+        }
+    }
+}

@@ -1,3 +1,16 @@
+.mode-switch {
+    text-align: center;
+}
+
+.mode-text {
+    position: relative;
+    top: 10px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
 .switch {
     position: relative;
     display: inline-block;
